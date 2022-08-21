@@ -260,7 +260,11 @@
 	height: 80px;
 }
 
-@media screen and (min-width: 1000px) {
+.li--style{
+	list-style: decimal;
+}
+
+@media screen and (min-width: 1200px) {
 	.contentContainer{
 		grid-template-columns: 1fr 1fr 300px;
 		grid-gap: 36px;
@@ -325,5 +329,9 @@
 	.headerContainer{
 		background-color: #9fcadb;
 		height: 25px;
+	  }
+
+	  .title--margtop{
+		margin-top: 150px;
 	  }
 }
