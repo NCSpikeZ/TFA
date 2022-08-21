@@ -22,6 +22,6 @@ gsap.to(".Wrapcontainer", {
         pin: true,
         start: 'center center',
         end: 'bottom',
-        scrub: 1,
+        scrub: 5,
     }
 });

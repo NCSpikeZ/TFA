@@ -10,16 +10,27 @@
 	list-style: none;
   }
 
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #9fcadb;
+    border-radius: 10px;
+  }
+
   .site{
 	  max-width: 1980px;
 	  max-height: 100%;
   }
 
   .bodyContainer{
-	  margin-left: 18px;
-	  margin-right: 18px;
 	  font-family: 'Vollkorn', serif;
-	  background-color: var(--color-bg);
+	  background-color: var(--color-bg-offset);
 	  color: var(--color-bg-offset);
   }
   
@@ -28,7 +39,7 @@
 	  grid-template-columns: 1fr;
 	  grid-gap: 18px;
   }
-  
+
   .title{
 	  font-family: 'Nanum Gothic', sans-serif;
   }
@@ -75,6 +86,8 @@
 	margin-top: 50px;
 	text-align: center;
 	margin-bottom: 50px;
+	text-decoration: underline;
+	text-decoration-color: #9fcadb;
 }
   
   .txt{
@@ -115,7 +128,7 @@
 	display: flex;
 	flex-direction: column;
     padding: 16px;
-    height: 90vh;
+    height: 100vh;
     background: url("../assets/images/background_img.jpg");
     background-position: center;
 	background-repeat: no-repeat;
@@ -126,7 +139,7 @@
   }
 
 .dlbtn--vh{
-	margin-top: 80vh;
+	margin-top: 85vh;
 }
   
   .dlbtn__el {
@@ -182,15 +195,15 @@
 }
 
 .tel1{
-    background-image: url(../assets/images/tel1.jpg);
+    background-image: url(../assets/images/tel1.png);
 }
 
 .tel2{
-    background-image: url(../assets/images/tel2.jpg);
+    background-image: url(../assets/images/tel2.png);
 }
 
 .tel3{
-    background-image: url(../assets/images/tel3.jpg);
+    background-image: url(../assets/images/tel3.png);
 }
 
 .hide{
@@ -209,7 +222,6 @@
 
 .review{
 	background-color: #9fcadb;
-	border-radius: 3%;
 	margin-top: 15px;
 	padding: 15px;
 }
@@ -251,11 +263,15 @@
 	}
 	  .second__title{
 		font-size: 90px;
-		margin-top: 280px;
+		margin-top: 40vh;
 	  }
 
+	  .margin--casestudy{
+		margin-top: 20vh;
+      }
+
 	  .modifier--bigleft{
-		padding-left: 5vh;
+		padding-left: 20vh;
 	  }
 
 	  .menu__ul{
@@ -267,8 +283,8 @@
 		grid-row: 4;
 	  }
 
-	  .title--big{
-		text-align:initial;
-		margin-left: 75px;
-	}
+	.headerContainer{
+		background-color: #9fcadb;
+		height: 25px;
+	  }
 }
