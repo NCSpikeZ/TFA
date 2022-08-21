@@ -96,6 +96,10 @@
 	  max-width: 50ch;
 	  margin-top: 18px;
   }
+
+  .hide{
+    display: none;
+}
   
   .menu__ul{
 	  padding-left: 0px;
@@ -183,7 +187,7 @@
 	background-image: url(../assets/images/googleplay.svg);
   }
 
-  .section{
+  .section__wraper{
     height: 70vh;
 	width: 100vh;
 	margin-top: 70px;
@@ -206,8 +210,28 @@
     background-image: url(../assets/images/tel3.png);
 }
 
-.hide{
-    display: none;
+.graph1{
+    background-image: url(../assets/images/graph1.jpg);
+}
+
+.graph2{
+    background-image: url(../assets/images/graph2.jpg);
+}
+
+.graph3{
+    background-image: url(../assets/images/graph3.jpg);
+}
+
+.graph4{
+    background-image: url(../assets/images/graph4.jpg);
+}
+
+.graph5{
+    background-image: url(../assets/images/graph5.jpg);
+}
+
+.graph6{
+    background-image: url(../assets/images/graph6.jpg);
 }
 
 .Wrapcontainer{
@@ -230,10 +254,20 @@
 	margin-bottom: 10px;
 }
 
+.photoContainer{
+	margin-top: 50px;
+	max-width: 100%;
+	height: 80px;
+}
+
 @media screen and (min-width: 1000px) {
 	.contentContainer{
 		grid-template-columns: 1fr 1fr 300px;
 		grid-gap: 36px;
+	}
+
+	.hide{
+		display: initial;
 	}
 
 	.first__title{
@@ -277,6 +311,11 @@
 	  .menu__ul{
 		font-size: 18px;
 		font-weight: bold;
+
+	  }
+
+	  .menu__ul li{
+		font-weight: initial;
 	  }
 
 	  .grid-rowIV{
