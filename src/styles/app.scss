@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  /*Darkmode*/
+  :root{ 
+	  --color-bg: #fff;
+	  --color-bg-offset: #181818;
+	  --color-text: #444;
+	  --color-text-offset: #FAFAFA;
+	}
+	@media(prefers-color-scheme: dark){
+	  :root {
+		  --color-bg: #181818;
+		  --color-bg-offset: #FFF;
+		  --color-text: #FAFAFA;
+		  --color-text-offset: rgb(177, 177, 177);
+		  --color-primary: #7579E7;
+		  --color-secondary: #cd2653;
+	  }
+	}
+	[data-theme='light']{
+	  --color-bg: #fff;
+	  --color-bg-offset: #181818;
+	  --color-text: #444;
+	  --color-text-offset: #FAFAFA;
+	  --color-primary: #black;
+	  --color-secondary: #cd2653;
+	}
+	[data-theme='dark']{
+	  --color-bg: #181818;
+	  --color-bg-offset: #FFF;
+	  --color-text: #FAFAFA;
+	  --color-text-offset: rgb(177, 177, 177);
+	}
+  
+  .site{
+	  max-width: 1980px;
+	  max-height: 100%;
+  }
+  .bodyContainer{
+	  margin-left: 18px;
+	  margin-right: 18px;
+	  font-family: 'Vollkorn', serif;
+	  background-color: var(--color-bg);
+	  color: var(--color-bg-offset);
+  }
+  
+  .contentContainer{
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-gap: 18px;
+  }
+  
+  .section--display{
+	  display: contents;
+  }
+  
+  .title{
+	  font-family: 'Nanum Gothic', sans-serif;
+  }
+  
+  .links{
+	  color: var(--color-secondary);
+  }
+  
+  .links:hover{
+	  text-decoration: overline;
+  }
+  
+  .links:visited{
+	  opacity: 50%;
+  }
+  
+  .links--overline{
+	  text-decoration: overline;
+  }
+  
+  .links--visited{
+	  opacity: 50%;
+  }
+  
+  .headerContainer{
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  margin-top: 15px;
+  }
+  
+  .picture__name{
+	  margin-left: 50px;
+	  color: var(--color-bg-offset);
+  }
+  
+  .icone{
+  fill: var(--color-bg-offset);
+  width: 150px;
+  }
+  
+  .first__title{
+	  margin-top: 215px;
+  }
+  
+  .second__title{
+	  margin-top: 50px;
+  }
+  
+  .title--big{
+	  font-size: 36px;
+  }
+  
+  .title--medium{
+   font-size: 27px;
+  }
+  
+  .title--red{
+	  color: var(--color-secondary);
+  }
+  
+  .txt{
+	  line-height: 1.3em;
+	  font-size: 20px;
+	  max-width: 50ch;
+  }
+  
+  .p--barrer{
+	  text-decoration: line-through;
+  }
+  
+  .menu__ul{
+	  list-style:none;
+	  padding-left: 0px;
+	  margin-top: 0px;
+  }
+  
+  .menu__el{
+	  font-size: 18px;
+  }
+  
+  .ul--liststyle{
+	  list-style:inside;
+  }
+  
+  .photoContainer{
+	  max-width: 150px;
+	  max-height: 150px;
+  }
+  
+  .photoContainer--big{
+	  max-width: 340px;
+	  border: black;
+	  border-style: solid;
+  }
+  
+  .dwt{
+	  width: 50px;
+	  padding-right: 10px;
+	}
+  
+	.section__footer{
+	  display: flex;
+	  justify-content:center;
+	  align-items: center;
+	  margin-top: 50px;
+	}
+  
+	.menu__footer{
+		display: flex;
+		margin-bottom: 0px;
+		margin-left: 15px;
+	}
+  
+	.menu__itemfooter{
+		margin: 5px;
+	}
+  
+	.link__anchor{
+		color: var(--color-bg-offset);
+	}
+  
+	.link__anchor:hover{
+	  color: var(--color-secondary);
+  }
+  
+	.btn__darkmode{
+	  color: var(--color-text);
+	  background-color: var(--color-bg);
+	  min-width: 100px;
+	  min-height: 25px;
+	  cursor: pointer;
+	 }
+  
+	 .btn--darkmode:hover{
+		 opacity: 75%;
+	 }
+  
+	 .txt--bold{
+		 font-weight: 700;
+	 }
+  
+	 .rouge{
+		 background-color: var(--color-secondary);
+		 color: #FAFAFA;
+	 }
+  
+	 .noir{
+	  background-color: #111111;
+	  color: #FAFAFA;
+	}
+	
+	.blanc{
+	  background-color: #D9D9D7;
+	  color: #111111;
+	}
+  
+	.couleurs{
+	  display: inline-flex;
+	  margin-left: 18px;
+	  margin-top: 36px;
+	}
+  
+	.couleurs li{
+	  padding-left: 5px;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: black;
+	  width: 75px;
+	  height: 75px;
+	}
+  
+	.photo--notop{
+	  margin-top: 60px;
+  }
+  
+	.citation{
+	  font-style: italic;
+	  font-size: 26px;
+	  padding-top: 30px;
+  }
+  
+	 @media screen and (min-width: 1200px) {
+		 .contentContainer{
+			 grid-template-columns: 350px 1fr 1fr;
+		 }
+  
+		 .first__title{
+			 font-size: 6em;
+			 grid-column: 1/4;
+			 margin-top: 180px;
+		 }
+  
+		 .menu__list{
+			 grid-column: 2;
+		 }
+  
+		 .menu__el{
+		  font-size: 24px
+		 }
+  
+		 .mouse{
+			 grid-column: 3;
+			 margin-left: 0px;
+			 margin-top: 380px;
+		 }
+  
+		 .grid-columnII{
+			 grid-column: 2;
+		 }
+  
+		 .photoContainer--big{
+			 max-width: 375px;
+			 margin-top: auto;
+		 }
+  
+		 .figure__mindmap{
+			 margin: 0;
+			 margin-top: auto;
+		 }
+  
+		 .bam{
+			 grid-column: 3;
+			 grid-row: 4;
+		 }
+  
+		 .menu__ul--flex{
+			 display: flex;
+		 }
+  
+		 .picture__name{
+			 margin-left: 0px;
+		 }
+  
+		 .photo--notop{
+			 margin-top: 95px;
+		 }
+  
+		 .section__footer{
+			 grid-column: 1/4;
+		 }
+  
+		 .audit__img{
+			 max-width: 500px;
+		 }
+	 }
+
+/*Section supérieur*/
+
+.content--top{
+	display: flex;
+	flex-direction: column;
+    padding: 16px;
+    height: 90vh;
+    background: url("../assets/images/background_img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.dlbtn {
+	display: flex;
+	margin-top: 80vh;
+  }
+  
+  .dlbtn__el {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 100%;
+	padding: 30px 0px;
+	max-width: 200px;
+	margin-right: 3px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  }
+  
+  .dlbtn__el:hover {
+	-webkit-transform: scale(110%);
+			transform: scale(110%);
+  }
+  
+  .dlbtn__txt {
+	position: absolute;
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow: hidden;
+  }
+  .dlbtn--last {
+	padding: 24px;
+	padding-top: 18px;
+	background-position: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+  }
+  .dlbtn--cs {
+	background-position: center;
+  }
+  .dlbtn--apple {
+	background-image: url(../assets/images/appstore.svg);
+  }
+  .dlbtn--google {
+	background-image: url(../assets/images/googleplay.svg);
+  }
